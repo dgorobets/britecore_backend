@@ -4,6 +4,9 @@ from django.utils import timezone
 
 
 class RiskType(models.Model):
+    """A model class used for storing data
+    about risk types
+    """
     name = models.CharField(max_length=255)
     created = models.DateTimeField(default=timezone.now)
     modified = models.DateTimeField(auto_now=True)
